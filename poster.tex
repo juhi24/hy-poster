@@ -1,0 +1,81 @@
+\documentclass[portrait,a1]{a0poster}
+\usepackage{color,multicol}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[round]{natbib}
+\usepackage[font=small]{caption}
+\usepackage{subcaption}
+\usepackage{lipsum} % Lorem ipsum generator
+
+\columnsep = 50pt %change this for separation of the columns
+
+\begin{document}
+
+\definecolor{facultyColor}{cmyk}{0,.37,.88,.02} % faculty of science
+\definecolor{gray}{cmyk}{.13,.05,0,.25}
+
+\vspace*{\fill} %some more marginal up
+
+\begin{minipage}[t]{0.98\linewidth} % The first minipage for the logo & title
+\vspace{0pt} % A trick to align the parallel minipages on top
+
+\vspace{0.008\linewidth} % Increase the top margin
+
+\begin{minipage}[t]{0.28\linewidth} % logo
+\vspace{0pt} % Alingns the parallel minipages on top
+\centering
+\includegraphics[width=0.8\linewidth]{HYlogo_fac_text-en}
+\includegraphics[width=0.65\linewidth]{division}
+
+\end{minipage} % no empty line before the next begin
+\begin{minipage}[t]{0.7\linewidth} % title
+\vspace{0pt} % Alingns the parallel minipages on top
+
+% More conservative title, upright and black
+{\renewcommand{\baselinestretch}{0.85} % Changes the baseline skip smaller for the title
+\Huge{\textbf{\textsf{The title of the poster\\ that can span\\ to multiple rows}}} % Text size for a1 posters
+\par} % <- for \baselinestretch
+
+
+\vspace{0.04\linewidth} % Empty space after the title
+
+\normalsize{\textsf{\bfseries{Roger R.\ Researcher and Paula P.\ Professor}}} % Text size for a1 posters
+
+\textcolor{gray}{\textsf{\bfseries{Department of Physics, Helsinki University}}}
+%
+\end{minipage}
+\end{minipage}
+
+
+\vfill %some more marginal between header and text
+
+\begin{multicols}{3} %change this for different number of columns
+
+\section{Introduction}
+
+\lipsum[1]
+
+\section{Section}
+
+\lipsum[2-3]
+
+\section{Another section}
+
+\lipsum[4-7]
+
+\section{Conclusions}
+
+\begin{itemize}
+\item \lipsum[8]
+\item \lipsum[9]
+\end{itemize}
+
+\end{multicols}
+
+\vfill %some more marginal in the end
+
+\end{document}
