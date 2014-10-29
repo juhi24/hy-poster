@@ -6,7 +6,7 @@ An unoffical LaTeX poster template themed for the University of Helsinki
 How to use
 ----------
 
-Download your faculty logo from [Helsinki University logodomain](http://hy.logodomain.com/), preferably in eps format, to include it in the header of your poster. It is recommended to autocrop the logo using `epstool` to get rid of the extra margin in the logo:
+Download your faculty logo from [Helsinki University logodomain](http://hy.logodomain.com/), preferably in eps format, to include it in the header of your poster. It is recommended to autocrop the logo using `epstool` to get rid of the extra margin in the image:
 
     epstool --copy --bbox inputfile.eps outputfile.eps
 
