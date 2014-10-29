@@ -11,4 +11,4 @@ The project is currently taking its first steps. Things may be broken or not rea
 Licensing
 ---------
 
-The poster template is licensed under CC BY-SA 3.0. See LICENSE for more info.
+The poster template is licensed under CC BY 4.0 International License. See LICENSE for more info.
