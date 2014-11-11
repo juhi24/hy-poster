@@ -12,14 +12,21 @@
 \usepackage[overload]{textcase}
 \usepackage{setspace}
 \usepackage{float}
+\usepackage{titlesec}
 \usepackage{lipsum} % Lorem ipsum generator
 
-\columnsep = 50pt %change this for separation of the columns
-
-\begin{document}
+\columnsep = 50pt % change this for separation of the columns
 
 \definecolor{facultyColor}{cmyk}{0,.37,.88,.02} % faculty of science
 \definecolor{gray}{cmyk}{.13,.05,0,.25}
+
+\titleformat{\section}[hang]
+{\LARGE\usefont{T1}{phv}{bx}{n}\color{facultyColor}} % format
+{} % label
+{0pt} % sep
+{\MakeUppercase} % before-code
+
+\begin{document}
 
 %\vspace*{\fill} %some more marginal up
 
@@ -93,7 +100,7 @@ Snow depth sensor				& Snow depth 				\\
 
 \section{Section}
 
-\lipsum[3-4]
+\lipsum[3]
 
 \begin{figure}[H]
   \centering
@@ -105,8 +112,8 @@ Snow depth sensor				& Snow depth 				\\
 \section{Conclusions}
 
 \begin{itemize}
+\item \lipsum[4]
 \item \lipsum[5]
-\item \lipsum[6]
 \end{itemize}
 
 \bibliographystyle{abbrvnat}
